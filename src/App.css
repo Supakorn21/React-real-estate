@@ -1,0 +1,96 @@
+:root{
+    --bg--black: #0C002B;
+    --bg--pink: #FF718E;
+    --bg--grey: #FAF7F5;
+    --bg--offwhite: #FFFEFF;
+    --bg--darkgrey: #ADA8AA;
+
+}
+*{
+    outline: none;
+}
+/* header */
+header{
+    background-color: var(--bg--black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    padding: 20px 15px;
+    
+}
+h4{
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: .9rem;
+}
+nav a:hover{
+    color: var(--bg--pink);
+}
+.register-btn{
+    background-color: var(--bg--pink);
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+.register-btn:hover{
+    color: var(--bg--pink);
+    background-color: var(--bg--offwhite);
+
+}
+
+/* content-area */
+#filter{
+    background-color: var(--bg--grey);
+    width: 30%;
+}
+.inside{
+    padding: 20px;
+    max-width: 300px;
+}
+#filter select{
+    background: transparent;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.filters{
+
+}
+.title{
+    font-size: .9rem;
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--bg--darkgrey);
+}
+input[type="text"]{
+    display: inline-block;
+    width: 45%;
+    margin-right: 2.5%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .4rem;
+    border: .2px solid gray;
+}
+.extras label{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+.extras label input[type="checkbox"]{
+    float: right;
+}
