@@ -4,6 +4,7 @@
     --bg--grey: #FAF7F5;
     --bg--offwhite: #FFFEFF;
     --bg--darkgrey: #ADA8AA;
+    --bg--lightgrey: #D1CBCD;
 
 }
 *{
@@ -49,6 +50,9 @@ nav a:hover{
 }
 
 /* content-area */
+#content-area{
+    display: flex;
+}
 #filter{
     background-color: var(--bg--grey);
     width: 30%;
@@ -76,7 +80,7 @@ nav a:hover{
     margin-bottom: 1rem;
     color: var(--bg--darkgrey);
 }
-input[type="text"]{
+.filters input[type="text"]{
     display: inline-block;
     width: 45%;
     margin-right: 2.5%;
@@ -94,3 +98,55 @@ input[type="text"]{
 .extras label input[type="checkbox"]{
     float: right;
 }
+
+
+#listings{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--bg--offwhite);
+}
+.search-area input[type="text"]{
+    width: 70%;
+    background: transparent;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 2px solid var(--bg--lightgrey);
+    margin-bottom: 20px;
+    color: var(--bg--lightgrey);
+
+}
+.sortby-area {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.results{
+    color: var(--bg--lightgrey);
+    font-size: .8rem;
+    
+}
+.sort-options{
+    float: right;
+    display: flex;
+    
+}
+.sort-options select{
+    font-size: .9rem;
+    font-weight: 300;
+    border: 1px solid var(--bg--lightgrey);
+    background: transparent;
+    padding: 5px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.view{
+    
+}
+.view i{
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+

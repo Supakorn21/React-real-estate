@@ -29,19 +29,19 @@ function Filter() {
         </div>
         <div className="filters extras">
             <span className="title">Extras</span>
-            <label  htmlfor="extras">
+            <label  htmlFor="extras">
                 <span>Elevators</span>
                 <input  name="extras" value="elavator" type="checkbox"></input>
             </label>
-            <label  htmlfor="extras">
+            <label  htmlFor="extras">
                 <span>Swimming Pool</span>
                 <input  name="extras" value="swimming-pool" type="checkbox"></input>
             </label>
-            <label  htmlfor="extras">
+            <label  htmlFor="extras">
                 <span>Finished Basement</span>
                 <input  name="extras" value="finished basement" type="checkbox"></input>
             </label>
-            <label  htmlfor="extras">
+            <label  htmlFor="extras">
                 <span>Gym</span>
                 <input  name="extras" value="gym" type="checkbox"></input>
             </label>
