@@ -19,35 +19,152 @@ function Listings() {
           </div>
         </div>
       </section>
-      <section className="listings-result">
-        <div className="listing">
-          <div className="listing-img">
-            <span className="address">Address</span>
-            <div className="details">
-              <div className="user-img"></div>
-              <div className="user-details">
-                <span className="user-name">Nina Smith</span>
-                <span className="post-date">08/05/2021</span>
-              </div>
-              <div className="listing-details">
-                <div className="floor-space">
-                  <i className="fa-solid fa-square"></i>
-                  <span>1000 ft&sup2</span>
+      <section className="listings-results">
+          <div className="listing">
+            <div className="listing-img">
+              <span className="address">23 Dexi hills</span>
+              <div className="details">
+                <div className="user-info">
+                  <div className="user-img"></div>
+                  <div className="user-details">
+                    <span className="user-name">
+                      Nina Smith <br></br>
+                      <span className="post-date">Posted on 08/05/2021</span>
+                    </span>
+                  </div>
                 </div>
-                <div className="bedrooms">
-                  <i className="fa-solid fa-bed"></i>
-                  <span>3 bedrooms</span>
+
+                <div className="listing-details">
+                  <div className="floor-space">
+                    <i className="fa-solid fa-square"></i>
+                    <span>
+                      1000 ft<sup>2</sup>
+                    </span>
+                  </div>
+                  <div className="bedrooms">
+                    <i className="fa-solid fa-bed"></i>
+                    <span>3 bedrooms</span>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="bottom-info">
+              <span className="price-month">$100 / month (ex.)</span>
+              <br></br>
+              <span className="location-bottom">
+                <i className="fa-solid fa-location-dot"></i> Ridgewood NY
+              </span>
+            </div>
           </div>
-          <div className="bottom-info">
-            <span>$100 / month</span>
-            <span>
-              <i className="fa-solid fa-location-dot"></i> Ridgewood NY
-            </span>
+          <div className="listing">
+            <div className="listing-img">
+              <span className="address">23 Dexi hills</span>
+              <div className="details">
+                <div className="user-info">
+                  <div className="user-img"></div>
+                  <div className="user-details">
+                    <span className="user-name">
+                      Nina Smith <br></br>
+                      <span className="post-date">Posted on 08/05/2021</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="listing-details">
+                  <div className="floor-space">
+                    <i className="fa-solid fa-square"></i>
+                    <span>
+                      1000 ft<sup>2</sup>
+                    </span>
+                  </div>
+                  <div className="bedrooms">
+                    <i className="fa-solid fa-bed"></i>
+                    <span>3 bedrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-info">
+              <span className="price-month">$100 / month (ex.)</span>
+              <br></br>
+              <span className="location-bottom">
+                <i className="fa-solid fa-location-dot"></i> Ridgewood NY
+              </span>
+            </div>
           </div>
-        </div>
+          <div className="listing">
+            <div className="listing-img">
+              <span className="address">23 Dexi hills</span>
+              <div className="details">
+                <div className="user-info">
+                  <div className="user-img"></div>
+                  <div className="user-details">
+                    <span className="user-name">
+                      Nina Smith <br></br>
+                      <span className="post-date">Posted on 08/05/2021</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="listing-details">
+                  <div className="floor-space">
+                    <i className="fa-solid fa-square"></i>
+                    <span>
+                      1000 ft<sup>2</sup>
+                    </span>
+                  </div>
+                  <div className="bedrooms">
+                    <i className="fa-solid fa-bed"></i>
+                    <span>3 bedrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-info">
+              <span className="price-month">$100 / month (ex.)</span>
+              <br></br>
+              <span className="location-bottom">
+                <i className="fa-solid fa-location-dot"></i> Ridgewood NY
+              </span>
+            </div>
+          </div>
+          <div className="listing">
+            <div className="listing-img">
+              <span className="address">23 Dexi hills</span>
+              <div className="details">
+                <div className="user-info">
+                  <div className="user-img"></div>
+                  <div className="user-details">
+                    <span className="user-name">
+                      Nina Smith <br></br>
+                      <span className="post-date">Posted on 08/05/2021</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="listing-details">
+                  <div className="floor-space">
+                    <i className="fa-solid fa-square"></i>
+                    <span>
+                      1000 ft<sup>2</sup>
+                    </span>
+                  </div>
+                  <div className="bedrooms">
+                    <i className="fa-solid fa-bed"></i>
+                    <span>3 bedrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-info">
+              <span className="price-month">$100 / month (ex.)</span>
+              <br></br>
+              <span className="location-bottom">
+                <i className="fa-solid fa-location-dot"></i> Ridgewood NY
+              </span>
+            </div>
+          </div>
+        
       </section>
       <section className="pagination">
         <ul className="pagination-nums">

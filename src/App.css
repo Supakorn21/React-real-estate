@@ -101,7 +101,7 @@ nav a:hover{
 
 
 #listings{
-    width: 53%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -150,3 +150,125 @@ nav a:hover{
     font-size: 1.5rem;
 }
 
+.listings-results{
+    margin-bottom: 60px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.listing{
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 9px 54px -4px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 9px 54px -4px rgba(224,224,224,1);
+    box-shadow: 0px 9px 54px -4px rgba(224,224,224,1);
+}
+.listing-img{
+    color: white;
+    padding: 15px;
+    position: relative;
+    background: url("https://images.homify.com/images/a_0,c_fit,f_auto,q_auto,w_1108/v1438813270/p/photo/image/379779/modern_house_hd_2/modern-houses-photos-by-mereces-arch-viz-studio.jpg") no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 200px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.details{
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(210,110,183);
+    background: linear-gradient(270deg, rgba(210,110,183,.8) 0%, rgba(134,62,205,.8) 80%);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.user-info{
+    display: flex;
+    line-height: 1.4;
+    margin-bottom: 10%;
+}
+.user-img{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: url("https://images.homify.com/images/a_0,c_fit,f_auto,q_auto,w_1108/v1438813270/p/photo/image/379779/modern_house_hd_2/modern-houses-photos-by-mereces-arch-viz-studio.jpg") no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+.details:hover{
+    opacity: 1;
+}
+.address:hover{
+    opacity: 0;
+}
+.address{
+    position: absolute;
+    bottom: 20px;
+    opacity: 1;
+}
+
+
+.user-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.user-name{
+    color: rgba(255,255,255,1);
+    font-size: 15px;
+    font-weight: 300;
+}
+.post-date{
+    color: rgba(255,255,255,.8);
+}
+.listing-details{
+    margin-left: 18%;
+    margin-bottom: 15%;
+}
+.floor-space i{
+    margin-right: 5%;
+}
+.floor-space{
+    margin-bottom: 8%;
+}
+
+.bedrooms i{
+    margin-right: 5%;
+}
+.house-name{
+    font-size: 17px;
+}
+.bottom-info{
+    height: 78px;
+    padding: 5% 10% 10% 10%;
+    line-height: 1.7;
+}
+.price-month{
+    color: #758293;
+} 
+.location-bottom{
+    color: #dae2ef;
+}
