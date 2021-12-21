@@ -1,13 +1,18 @@
 import React from "react";
+import { useState } from "react";
+import listingsData from "../data/listingsData";
 
 
-function Filter() {
+export function Filter() {
+    const [locations, setLocations] = useState(listingsData)
   return (
     <section id="filter">
         <div className="inside">
         <h4>Filter</h4>
-        <select name="neighbourhood" className="filters neighbourhood">
-            <option>Ridgewood</option>
+        <select name="neighbourhood" className="filters neighbourhood" onChange={event => setLocations( ...locations , event.target.value  )} value={locations}>
+            {console.log(locations)}
+            <option value="Ridgewood" >Ridgewood</option>
+            <option value="Miami">Miami</option>
         </select>
         <select name="housetype" className="filters housetype">
             <option>Ranch</option>
