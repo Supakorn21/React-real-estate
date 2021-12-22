@@ -5,12 +5,12 @@ const listingsData = [
         state: 'NY',
         rooms: 3,
         price: 220000,
-        flooeSpace: 2000,
+        floorSpace: 2000,
         extras: [
             'elevator',
-            'gym'
+            
         ],
-        homeType: 'Apartment',
+        homeType: 'Condo',
         image:'https://wp-assets.dotproperty-kh.com/wp-content/uploads/sites/14/2020/03/09123131/Civic-Horizon-Ekkamai-696x464.jpg'
     },
     {
@@ -19,12 +19,12 @@ const listingsData = [
         state: 'FL',
         rooms: 2,
         price: 220000,
-        flooeSpace: 1400,
+        floorSpace: 1400,
         extras: [
-            'elevator',
+            
             'pool'
         ],
-        homeType: 'Apartment',
+        homeType: 'Condo',
         image:'https://ak-d.tripcdn.com/images/200d1g000001gzbipD1C4_Z_550_412_R5_Q70_D.jpg'
     },
     {
@@ -33,12 +33,12 @@ const listingsData = [
         state: 'VA',
         rooms: 5,
         price: 345355,
-        flooeSpace: 2000,
+        floorSpace: 2000,
         extras: [
-            'elevator',
+            
             'gym'
         ],
-        homeType: 'Apartment',
+        homeType: 'Condo',
         image:'https://cdn.renthub.in.th/images/uploaded/201502/20150204/apartment_pictures/normal/6bbbda5b6e5f42d77405b2f6813e743a.jpg?1423023758'
     },
     {
@@ -47,7 +47,7 @@ const listingsData = [
         state: 'NJ',
         rooms: 1,
         price: 8000,
-        flooeSpace: 100,
+        floorSpace: 100,
         extras: [
             'elevator',
             'gym'
@@ -61,9 +61,9 @@ const listingsData = [
         state: 'CA',
         rooms: 3,
         price: 60300,
-        flooeSpace: 50,
+        floorSpace: 50,
         extras: [
-            'elevator',
+            'pool',
             'gym'
         ],
         homeType: 'Apartment',
@@ -75,7 +75,7 @@ const listingsData = [
         state: 'NY',
         rooms: 2,
         price: 7854,
-        flooeSpace: 50,
+        floorSpace: 50,
         extras: [
             'elevator',
             'gym'
@@ -89,7 +89,7 @@ const listingsData = [
         state: 'IN',
         rooms: 15,
         price: 5236,
-        flooeSpace: 50,
+        floorSpace: 50,
         extras: [
             'elevator',
             'gym'

@@ -1,11 +1,21 @@
 import React from "react";
 import listingsData from "../data/listingsData";
+import { useState } from "react";
+import RealEstateItems from "./RealEstateItems";
 
-function Listings() {
+function Listings({onSearchFilter, listingsData}) {
+  const [search, setSearch] = useState('');
+
+
+  const handleSearchChange = (event) => {
+    const {value} = event.target;
+    setSearch(value);
+    onSearchFilter(value);
+  }
   return (
     <section id="listings" className="listings">
       <section className="search-area">
-        <input type="text" name="search"></input>
+        <input type="text" name="search" id="search" onChange={handleSearchChange} value={search} placeholder="Search here" ></input>
       </section>
       <section className="sortby-area">
         <div className="results">390 results found</div>
@@ -21,46 +31,9 @@ function Listings() {
         </div>
       </section>
       <section className="listings-results">
-        {listingsData.map((data, index) => {
-          return (
-            <div className="listing" key={index} >
-              <div className="listing-img" style={{background: `url("${data.image}") no-repeat center center `}}>
-                <span className="address">{data.address}</span>
-                <div className="details">
-                  <div className="user-info">
-                    <div className="user-img"></div>
-                    <div className="user-details">
-                      <span className="user-name">
-                        Nina Smith <br></br>
-                        <span className="post-date">Posted on 08/05/2021</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="listing-details">
-                    <div className="floor-space">
-                      <i className="fa-solid fa-square"></i>
-                      <span>
-                        1000 ft<sup>2</sup>
-                      </span>
-                    </div>
-                    <div className="bedrooms">
-                      <i className="fa-solid fa-bed"></i>
-                      <span>{data.rooms} bedrooms</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-info">
-                <span className="price-month">${data.price}/ month (ex.)</span>
-                <br></br>
-                <span className="location-bottom">
-                  <i className="fa-solid fa-location-dot"></i> {data.city}, {data.state}
-                </span>
-              </div>
-            </div>
-          );
-        })}
+        {listingsData.map((item) => (
+          <RealEstateItems item={item} key={item}/>
+        ))}
       </section>
       <section className="pagination">
         <ul className="pages">
