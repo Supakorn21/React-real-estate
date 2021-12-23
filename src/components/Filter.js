@@ -2,28 +2,98 @@ import React from "react";
 import { useState } from "react";
 import listingsData from "../data/listingsData";
 
-export function Filter({ citys, manyRooms }) {
-  const [locations, setLocations] = useState(listingsData);
-  console.log(citys);
+export function Filter({ citys, rooms ,homeTypes, onLocationFilter, onRoomsFilter, onHomeTypeFilter }) {
+  const[filters, setFilters] =useState({
+    location: '',homeType: '',room: '',price: '',floorSpace: '',
+    elevators: '',swimmingPool: '',finishedBasement: '',
+    gym: '' 
+  })
+
+  
+  const handleInput = (field) => (event) => {
+    const { value } = event.target;
+
+      setFilters({
+        ...filters,
+        [field]: value,
+      })
+    switch (field) {
+      case "location":
+        
+        onLocationFilter(value);
+        break;
+      case "homeType":
+        
+        onHomeTypeFilter(value);
+        break;
+      case "room":
+        
+        onRoomsFilter(value);
+        break;
+      case "price":
+        
+
+        break;
+      case "floorSpace":
+        
+
+        break;
+      case "elevators":
+        
+
+        break;
+      case "swimmingPool":
+        
+
+        break;
+      case "finishedBasement":
+        
+
+        break;
+      case "gym":
+        
+
+        break;
+
+      default:
+        break;
+    }
+  };
 
   return (
     <section id="filter">
       <div className="inside">
         <h4>Filter</h4>
-        <select name="neighbourhood" className="filters neighbourhood">
+        <select
+          name="neighbourhood"
+          className="filters neighbourhood"
+          onChange={handleInput("location") }
+          value={filters.location}
+        >
+          <option >All</option>
           {citys.map((city) => (
             <option value={city} key={city}>
               {city}
             </option>
           ))}
         </select>
-        <select name="housetype" className="filters housetype">
-          <option>Ranch</option>
+        <select name="housetype" className="filters housetype" onChange={handleInput("homeType") }
+          value={filters.homeType}>
+          {homeTypes.map((homeType) => (
+            <option value={homeType} key={homeType}>
+              {homeType}</option>
+          ))}
         </select>
-        <select name="bedrooms" className=" filters neighbourhood">
-          {manyRooms.map((rooms) => (
-            <option value={rooms} key={rooms}>
-              {rooms} BR
+        <select
+          name="bedrooms"
+          className=" filters neighbourhood"
+          onChange={handleInput("room")}
+          value={filters.room}
+        >
+          {console.log(rooms)}
+          {rooms.map((room) => (
+            <option value={room} key={room}>
+              {room} BR
             </option>
           ))}
         </select>

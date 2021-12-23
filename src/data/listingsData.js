@@ -3,7 +3,7 @@ const listingsData = [
         address: '20-34 grand ave',
         city: 'Ridgewood',
         state: 'NY',
-        rooms: 3,
+        room: 3,
         price: 220000,
         floorSpace: 2000,
         extras: [
@@ -17,7 +17,7 @@ const listingsData = [
         address: ' 3 universal st',
         city: 'Orlando',
         state: 'FL',
-        rooms: 2,
+        room: 2,
         price: 220000,
         floorSpace: 1400,
         extras: [
@@ -31,7 +31,7 @@ const listingsData = [
         address: '1 president plaza',
         city: 'Richmond',
         state: 'VA',
-        rooms: 5,
+        room: 5,
         price: 345355,
         floorSpace: 2000,
         extras: [
@@ -45,7 +45,7 @@ const listingsData = [
         address: '889 beemore st',
         city: 'Newark',
         state: 'NJ',
-        rooms: 1,
+        room: 1,
         price: 8000,
         floorSpace: 100,
         extras: [
@@ -59,7 +59,7 @@ const listingsData = [
         address: '43 hollywood blvd',
         city: 'Los Angeles',
         state: 'CA',
-        rooms: 3,
+        room: 3,
         price: 60300,
         floorSpace: 50,
         extras: [
@@ -73,7 +73,7 @@ const listingsData = [
         address: '2 main st',
         city: 'Bedstuy',
         state: 'NY',
-        rooms: 2,
+        room: 2,
         price: 7854,
         floorSpace: 50,
         extras: [
@@ -85,9 +85,9 @@ const listingsData = [
     },
     {
         address: '730 gates ave',
-        city: 'Springfirld',
+        city: 'Springfield',
         state: 'IN',
-        rooms: 15,
+        room: 15,
         price: 5236,
         floorSpace: 50,
         extras: [

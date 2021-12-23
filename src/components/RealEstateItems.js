@@ -24,7 +24,7 @@ const   RealEstateItems = ({item}) => {
                     </div>
                     <div className="bedrooms">
                       <i className="fa-solid fa-bed"></i>
-                      <span>{item?.rooms} bedrooms</span>
+                      <span>{item?.room} bedrooms</span>
                     </div>
                   </div>
                 </div>
